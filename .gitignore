@@ -1,0 +1,19 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Generated figures and raw data (post-processing output)
+*.png
+*.svg
+svg/
+
+# Local simulation configuration (contains absolute paths)
+paths.txt
+
+# YADE log folders and snapshots
+Log/
+*.yade.bz2
+
+# Logs
+*.log
+nohup.out

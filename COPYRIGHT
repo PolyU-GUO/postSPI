@@ -1,0 +1,54 @@
+postSPI -- YADE post-processing scripts for axial soil-pipe interaction (ASPI)
+=============================================================================
+
+Copyright (C) 2026 by Chang GUO <chang.guo@connect.polyu.hk>
+Department of Civil and Environmental Engineering,
+The Hong Kong Polytechnic University, Hung Hom, Hong Kong
+
+postSPI source files
+--------------------
+
+  This program is free software; it is licensed under the terms of the
+  GNU General Public License, version 2 or later -- the LICENSE file in this
+  directory holds the full text.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+  details.
+
+
+Third-party components
+----------------------
+
+1. YADE (Yet Another Dynamic Engine) -- https://yade-dem.org
+
+   postSPI is a set of user scripts executed inside YADE. The contact models,
+   geometry functors and law functors it reads come from YADE. YADE is free
+   software distributed under the GNU General Public License, version 2 or
+   later; its copyright notices (kept in the individual files of the YADE
+   tree) and its licence apply to it unchanged.
+
+   Reference: Smilauer V., Chareyre B. (2021) Yade Documentation, 3rd edition,
+   The Yade Project.
+
+2. myYade -- https://github.com/PolyU-GUO/myYade
+
+   The capillary (fCap) contact force used by the *_cap scripts
+   (get_pressureMatrixZone5_cap.py / draw_pressureMatrixZone5_cap.py) is
+   provided by the capillary model added on top of the YADE tree in the
+   myYade fork (CapillaryCohPhys and Law2_ScGeom6D_CapillaryCohPhys_Capillarity).
+   That component is Copyright (C) 2026 by Chang GUO and distributed under the
+   GNU General Public License, version 2 or later.
+
+   Because postSPI depends on (and is only usable together with) these
+   GPL-licensed components, postSPI itself is released under the same licence:
+   GNU General Public License, version 2 or later.
+
+
+No warranty
+-----------
+
+The code is provided as-is, without warranty of any kind, for research
+purposes. Neither the authors nor The Hong Kong Polytechnic University accept
+any liability for any use of this software.

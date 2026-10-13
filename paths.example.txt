@@ -1,0 +1,19 @@
+# paths.txt -- maps a simulation label to its Log directory.
+#
+# postSPI reads this file through setting.py to locate the post/ folder of a
+# simulation. Copy this template to "paths.txt" next to the scripts and
+# replace each path below with the Log folder of your own simulation.
+#
+# Format (one line per simulation, "label: /absolute/path/to/simulation"):
+#
+#   <label>: <path-to-simulation-folder>
+#
+# The label is the value of the TARGET_SIMULATION environment variable used by
+# setting.py (default "R34A025"). R34 / S34 / M34 denote the nominal pressure
+# (34 kPa) at the three roughness levels Rn = 1.01 / 0.04 / 0.21.
+
+R34:      /path/to/your/Log/R34
+S34:      /path/to/your/Log/S34
+M34:      /path/to/your/Log/M34
+R17:      /path/to/your/Log/R17
+R50:      /path/to/your/Log/R50
